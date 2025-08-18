@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* nav {
+        display: flex;
+      } */
+      .menu {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: aqua;
+      }
+      /* .menu:hover{
+        background-color: blueviolet;
+        color: #fff;
+       } */
+      .menu.active {
+        background-color: blueviolet;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="menu">홈</div>
+      <div class="menu">상품</div>
+      <div class="menu">이벤트</div>
+      <div class="menu">마이페이지</div>
+    </nav>
+    <script>
+      const menus = document.querySelectorAll(".menu");
+      //   menus.forEach(function (menu, index) {
+      //     console.log(menu);
+      //     menu.addEventListener("click", function () {
+      //       menu.classList.toggle("active");
+      //     });
+      //   });
+      menus.forEach(function (menu, index) {
+        // console.log(menu);
+        menu.addEventListener("click", function () {
+          if (menu.classList.contains("active")) {
+            menu.classList.remove("active");
+          } else {
+            menu.classlist.add("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

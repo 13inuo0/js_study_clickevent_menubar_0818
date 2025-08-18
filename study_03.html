@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+    //   const fruits = ["바나나", "딸기", "사과"];
+    //   fruits.forEach(function (fruit, index) {
+    //     console.log(fruit);
+    //     console.log(index);
+    //   });
+      //   사람정보를 객체 {} 로 배열에 담기
+      const peoples = [
+        {
+          name: "민수",
+          age: 20,
+          city: "서울",
+        },
+        {
+          name: "영희",
+          age: 22,
+          city: "부산",
+        },
+        {
+          name: "철수",
+          age: 21,
+          city: "대구",
+        },
+        {
+          name: "이슬",
+          age: 24,
+          city: "대전",
+        },
+      ];
+      //    forEach()로 배열에 있는 사람정보를 순서대로 꺼내서 출력
+      peoples.forEach(function (people, index) {
+        console.log(people);
+        console.log(index + 1);
+        document.write(`이름: ${people.name}, 나이:${people.age} , 도시:${people.city} <br>`)
+      });
+    </script>
+  </body>
+</html>

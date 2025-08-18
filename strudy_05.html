@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>공지사항예제</title>
+    <style>
+      /* h3 {
+        color: blue;
+        display: inline;
+      }
+      p {
+        color: #222;
+        display: inline;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="notice">
+      <h2>공지사항</h2>
+      <div class="noticeLIst">
+        <!-- js출력 -->
+      </div>
+    </div>
+    <script>
+        const notices = [
+          { title: "여름 세일 안내", date: "2025-08-01" },
+          { title: "신규 회원 혜택 이벤트", date: "2025-08-10" },
+          { title: "배송 지연 안내", date: "2025-08-15" },
+          { title: "시스템 점검 공지", date: "2025-08-20" },
+        ];
+        // 1.공지사항에 forEach()
+      //     document.write(`${index + 1}. <p>${notice.title}</p> (<p>${notice.date}</p>)<br>`);})
+          const noticeLIst = document.querySelector(".noticeLIst");
+          notices.forEach(function (notice, index){
+            noticeLIst.innerHTML += `${index +1}. ${notice.title} ${notice.date}<br>`
+          })
+        // 2
+    </script>
+  </body>
+</html>
