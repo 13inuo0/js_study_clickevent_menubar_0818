@@ -1,0 +1,23 @@
+@charset "utf-8";
+@import url("reset.css");
+/* 탭 버튼 */
+.tap-btn{
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color:#f0f0f0;
+}
+.tap-btn.active{
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+}
+/* 탭 내용 */
+.tap-content{
+    display: none;
+    padding: 20px;
+    border: 1px solid #333;
+}
+.tap-content.active{
+    display: block;
+}
