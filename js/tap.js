@@ -6,12 +6,20 @@ window.addEventListener("load",function(){
         // console.log(index);
         tap.addEventListener("click",function(){
             // content[index]
-            console.log(index);
-            
-            console.log(content[index]);
-            
+            taps.forEach((t)=>{
+                console.log(t);
+                t.classList.remove("active")
+                
+            })
+            content.forEach((j)=>{
+                console.log(j);
+                j.classList.remove("active")
+                
+            })
+            // console.log(index);
+            // console.log(content[index]);
+            tap.classList.add("active")
+            content[index].classList.add("active")
         })
-        
-        
     })
 })
