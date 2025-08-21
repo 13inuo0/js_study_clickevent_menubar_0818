@@ -1,0 +1,23 @@
+@import url("reset.css");
+@charset "utf-8";
+.accordion{
+    width: 50%;
+    max-width: 500px;
+    background-color: antiquewhite;
+}
+.menu{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: blueviolet;
+}
+.submenu{
+    display: none;
+    padding: 10px 20px;
+}
+.submenu.active{
+    display: block;
+}
+.submenu > li{
+    padding: 10px 20px;
+}
