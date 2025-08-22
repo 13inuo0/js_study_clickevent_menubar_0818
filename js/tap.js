@@ -20,6 +20,7 @@ window.addEventListener("load",function(){
             // console.log(content[index]);
             tap.classList.add("active")
             content[index].classList.add("active")
+            
         })
     })
 })
